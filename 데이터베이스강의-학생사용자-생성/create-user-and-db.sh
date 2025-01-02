@@ -19,7 +19,7 @@ while IFS=',' read -r username dbname; do
     psql -U "$PGUSER" -d "$PGDB" -h "$PGHOST" -p "$PGPORT" <<END
     CREATE USER "$username" WITH PASSWORD '$USERPW';
     CREATE DATABASE "$dbname" OWNER "$username";
-    GRANT CREATE ON DATABASE "$dbname" TO "$username";
+    GRANT ALL PRIVILAGES ON DATABASE "$dbname" TO "$username";
 END
 
 

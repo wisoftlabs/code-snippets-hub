@@ -59,3 +59,4 @@ username2,dbname2 ...
 
 - `pgpass` 파일을 적절히 설정해야 비밀번호 없이 자동으로 PostgreSQL에 접속할 수 있습니다. `pgpass` 파일 경로는 `/home/postgres/.pgpass`로 설정되어 있습니다.
 - 모든 사용자의 비밀번호는 스크립트 내의 `USERPW` 변수에 지정된 비밀번호로 설정됩니다.
+- scp 복사가 오류가 발생할 수 있습니다. 파일 복사시 git clone을 활용하셔도 좋을 것 같습니다.
